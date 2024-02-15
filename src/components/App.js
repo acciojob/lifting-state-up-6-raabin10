@@ -9,13 +9,13 @@ function App() {
   ]);
 
   const handleComplete = (id) => {
-    setTodos((prevTodos) =>
-      prevTodos.map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.completed } : todo
-      )
-    );
-  };
-  
+  setTodos((prevTodos) =>
+    prevTodos.map((todo) =>
+      todo.id === id ? { ...todo, completed: !todo.completed } : todo
+    )
+  );
+};
+
 
   return (
     <div className="App">

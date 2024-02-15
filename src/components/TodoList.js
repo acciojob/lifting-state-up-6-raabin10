@@ -9,7 +9,7 @@ const TodoList = ({ todos, onComplete }) => {
             {!todo.completed && (
               <button onClick={() => onComplete(todo.id)}>Complete</button>
             )}
-            {}
+            {todo.completed && <span>Completed</span>}
           </li>
         ))}
       </ul>
